@@ -16,10 +16,16 @@ repositories {
 }
 
 dependencies {
+    implementation("com.h2database:h2:2.2.224")
     implementation("org.springframework.boot:spring-boot-starter-web")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
     testImplementation("org.testcontainers:junit-jupiter")
-    //add dependencies as needed
+    testImplementation("org.assertj:assertj-core:3.25.3")
+    testImplementation("org.testcontainers:junit-jupiter:1.19.7")
+    testImplementation("org.junit.jupiter:junit-jupiter-engine:5.7.2")
+    testImplementation("org.junit.jupiter:junit-jupiter-params:5.7.2")
+
 }
 
 tasks.withType<Test> {
